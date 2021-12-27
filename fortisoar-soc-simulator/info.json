@@ -11,15 +11,6 @@
     "configuration": {
         "fields": [
             {
-                "title": "Import Scenarios",
-                "description": "Import Scenarios",
-                "required": false,
-                "editable": true,
-                "visible": true,
-                "type": "checkbox",
-                "name": "import_records"
-            },
-            {
                 "title": "Load Threat Intelligence",
                 "description": "Load latest threat intelligence data.",
                 "required": false,
