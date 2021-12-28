@@ -73,7 +73,7 @@ def load_threat():
         lines=''
         try:
             response = requests.get(url=item.get('url'))
-            file_path = "{}{}.txt".format(threat_intel_dir, item.get('filename'))
+            file_path = "{}{}.dot".format(threat_intel_dir, item.get('filename'))
 
             if item.get('name') == "bad_ip" or item.get('name') == "bad_domains":
                 decoded_content = response.content.decode('utf-8')

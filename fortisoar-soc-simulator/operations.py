@@ -4,7 +4,7 @@ from connectors.core.connector import get_logger, ConnectorError
 logger = get_logger('FortiSOARSocSimulator')
 
 def __threatdata_from_file(filename , params):
-    file_path = "{}/threat_intelligence/{}.txt".format(os.path.dirname(__file__), filename)
+    file_path = "{}/threat_intelligence/{}.dot".format(os.path.dirname(__file__), filename)
     lines = open(file_path).read().splitlines()
     if params.get('random'):
         return(random.choice(lines))
